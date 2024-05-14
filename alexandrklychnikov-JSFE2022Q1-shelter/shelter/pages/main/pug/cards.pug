@@ -1,0 +1,12 @@
+- const pets = ['Katrine', 'Jennifer', 'Woody']
+
+mixin card(bg, name)
+  .card-wrapper
+    .card
+      .image-content(style = bg)
+      .pet-name #{name}
+      .button.card-btn Learn more
+
+each pet in pets
+  - let img = pet.toLowerCase();
+  +card(`background: url(./assets/images/pets-${img}.png)`, pet)

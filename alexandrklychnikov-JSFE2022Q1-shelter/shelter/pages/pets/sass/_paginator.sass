@@ -1,0 +1,32 @@
+.page-controls
+  display: flex
+  justify-content: space-between
+  column-gap: 20px
+
+.page-control
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 52px
+  height: 52px
+  padding-bottom: 4px
+  border: 2px solid #F1CDB3
+  box-sizing: border-box
+  border-radius: 100px
+  font-family: 'Georgia'
+  font-style: normal
+  font-weight: 400
+  font-size: 20px
+  line-height: 52px
+  letter-spacing: 0.06em
+  color: #292929
+  cursor: pointer
+  &:hover:not(.page-number, .disabled)
+    background-color: #F1CDB3
+  &.page-number
+    border: 2px solid #F1CDB3
+    cursor: default
+  &.disabled
+    border: 2px solid #CDCDCD
+    color: #CDCDCD
+    cursor: default

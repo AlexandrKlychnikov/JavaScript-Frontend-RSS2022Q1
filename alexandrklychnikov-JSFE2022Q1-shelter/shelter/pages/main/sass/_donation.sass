@@ -1,0 +1,72 @@
+.donation
+  @extend .our-friends
+
+.donation__heading
+  @extend .about__heading
+
+.donation__content
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap-reverse
+  column-gap: 30px
+  .image-content
+    width: 505px
+    height: 261px
+    background-image: url('./assets/images/donation-dog.png')
+  .text-content
+    position: relative
+    top: 0px
+    left: 1px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    row-gap: 20px
+    width: 380px
+    height: 282px
+
+.donation__subheading
+  font-family: 'Georgia'
+  font-style: normal
+  font-weight: 400
+  font-size: 15px
+  line-height: 110%
+  display: flex
+  align-items: center
+  letter-spacing: 0.06em
+  color: #545454
+
+.credit-card
+  display: flex
+  align-items: center
+  column-gap: 15px
+  padding: 11px 15px
+  width: 350px
+  height: 43px
+  background: #F1CDB3
+  border-radius: 9px
+  &:hover
+    background: #FDDCC4
+  a
+    text-decoration: none
+    font-family: 'Georgia'
+    font-style: normal
+    font-weight: 400
+    font-size: 20px
+    line-height: 115%
+    letter-spacing: 0.06em
+    color: #545454
+
+.credit-card__number
+  outline: none
+  white-space: nowrap
+  position: relative
+  top: -1px
+
+.legal-info
+  font-family: 'Arial'
+  font-style: italic
+  font-weight: 400
+  font-size: 12px
+  line-height: 18px
+  color: #B2B2B2

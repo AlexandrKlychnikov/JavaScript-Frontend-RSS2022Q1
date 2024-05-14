@@ -1,0 +1,27 @@
+@import slider
+
+.our-friends
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+  row-gap: 60px
+  background: #F6F6F6
+  .button
+    padding-top: 16px
+    width: 260px
+    a
+      text-decoration: none
+    &:hover
+      background: #FDDCC4
+      border-color: #FDDCC4
+  &.container
+    padding: 80px 40px 100px
+
+.our-friends__heading
+  @extend .about__heading
+  height: 90px
+  position: relative
+  top: 1px
+  left: 1px
+  text-align: center

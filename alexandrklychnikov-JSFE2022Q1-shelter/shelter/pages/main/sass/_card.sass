@@ -1,0 +1,77 @@
+.card-wrapper
+  display: flex
+  justify-content: center
+  overflow: hidden
+  width: 270px
+  height: 435px
+  &:hover
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04)
+
+@keyframes move-left
+  from
+    left: 0px
+  to
+    left: 270px
+
+@keyframes move-right
+  from
+    left: 0px
+  to
+    left: -270px
+
+.transition-left
+  animation-name: move-left
+  animation-duration: 2s
+
+.transition-right
+  animation-name: move-right
+  animation-duration: 2s
+
+.card
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+  row-gap: 30px
+  flex: 1 0 270px
+  height: 435px
+  padding-bottom: 30px
+  background: #FAFAFA
+  border-radius: 9px
+  .image-content
+    width: 100%
+    aspect-ratio: 1/1
+  &:hover
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04)
+    background: #FFFFFF
+    cursor: pointer
+    .button.card-btn
+      background: #FDDCC4
+      border-color: #FDDCC4
+    .image-content
+      background: #FFFFFF
+
+  .button.card-btn
+    background: none
+    border: 2px solid #F1CDB3
+    width: 187px
+    padding: 13px 42px
+    font-family: 'Georgia'
+    font-style: normal
+    font-weight: 400
+    font-size: 17px
+    line-height: 130%
+    letter-spacing: 0.06em
+    color: #292929
+
+.pet-name
+  height: 23px
+  font-family: 'Georgia'
+  font-style: normal
+  font-weight: 400
+  font-size: 20px
+  line-height: 23px
+  text-align: center
+  letter-spacing: 0.06em
+  color: #545454

@@ -1,0 +1,8 @@
+- let btns = [['<<', 'first-number'], ['<', 'prev-number'], ['1', 'page-number' ], ['>', 'next-number'], ['>>', 'last-number']]
+- let edge = ['1', 'last page']
+
+.page-controls
+  each btn in btns
+    - let mod = (btn[0] === '<<' || btn[0] === '<' && edge.includes(btns[2][0])) ? 'disabled' : ''
+    - let num = btn[1]
+    .btn(class=`${num} page-control ${mod}`) #{btn[0]}

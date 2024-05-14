@@ -1,0 +1,81 @@
+.not-only
+  display: flex
+  justify-content: space-between
+  align-items: end
+  background: url('./assets/images/start-screen-gradient-background.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+
+.start-screen
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+  width: 1200px
+  margin-top: 60px
+  .image-content
+    width: 58.167%
+    aspect-ratio: 1 / 1.043
+    background: url('./assets/images/start-screen-puppy.png')
+    background-size: cover
+  .text-content
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    position: relative
+    bottom: 40px
+    width: 460px
+    height: 322px
+    .not-only__heading
+      font-family: 'Georgia'
+      font-style: normal
+      font-weight: 400
+      line-height: 130%
+      display: flex
+      align-items: center
+      color: #FFFFFF
+      white-space: nowrap
+      font-size: 44px
+      @media screen and (max-width: 760px)
+        font-size: 38px
+      @media screen and (max-width: 680px)
+        font-size: 36px
+      @media screen and (max-width: 580px)
+        font-size: 32px
+      @media screen and (max-width: 480px)
+        font-size: 28px
+      @media screen and (max-width: 380px)
+        font-size: 25px
+    .not-only__subheading
+      font-family: 'Arial'
+      font-style: normal
+      font-weight: 400
+      font-size: 15px
+      line-height: 160%
+      display: flex
+      color: #CDCDCD
+
+.button
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 15px 44px
+  width: 208px
+  height: 52px
+  background: #F1CDB3
+  border-radius: 100px
+  outline: none
+  border: none
+  cursor: pointer
+  a
+    text-decoration: none
+    font-family: 'Georgia'
+    font-style: normal
+    font-weight: 400
+    font-size: 17px
+    line-height: 130%
+    letter-spacing: 0.06em
+    color: #292929
+  &:hover
+    background: #FDDCC4

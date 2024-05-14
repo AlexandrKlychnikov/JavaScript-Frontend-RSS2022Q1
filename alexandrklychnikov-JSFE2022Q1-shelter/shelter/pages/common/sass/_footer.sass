@@ -1,0 +1,80 @@
+.footer.container
+  padding: 40px 40px 0
+  background: url(./assets/images/start-screen-gradient-background.jpg), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20
+
+.footer-container
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+  column-gap: 160px
+
+.footer__contacts
+  position: relative
+  bottom: 22px
+  width: 278px
+  display: flex
+  flex-direction: column
+  row-gap: 40px
+
+.footer__location
+  @extend .footer__contacts
+  width: 302px
+  row-gap: 37px
+
+.footer__image
+  width: 300px
+  aspect-ratio: 300 / 310
+  background: url(./assets/images/footer-puppy.png)
+  background-size: cover
+
+.contacts__heading, .location__heading
+  @extend .about__heading
+  letter-spacing: 0.059em
+  color: #FFFFFF
+
+.location__heading
+  width: 100%
+  position: relative
+  top: 4px
+  left: 1px
+
+.phone a, .email a, .location a
+  display: flex
+  column-gap: 20px
+  font-family: 'Georgia'
+  font-style: normal
+  font-weight: 400
+  font-size: 20px
+  line-height: 115%
+  letter-spacing: 0.06em
+  color: #F1CDB3
+  text-decoration: none
+  white-space: nowrap
+
+.contacts__item
+  display: flex
+  justify-content: start
+  gap: 20px
+  position: relative
+  top: 3px
+
+.location__item
+  display: flex
+  justify-content: start
+  gap: 18px
+  position: relative
+  left: 1px
+
+.contacts__item img
+  position: relative
+  bottom: 3px
+
+.location__item.first img
+  position: relative
+  right: 1px
+  bottom: 2px
+
+.location__item.second img
+  position: relative
+  bottom: 4px

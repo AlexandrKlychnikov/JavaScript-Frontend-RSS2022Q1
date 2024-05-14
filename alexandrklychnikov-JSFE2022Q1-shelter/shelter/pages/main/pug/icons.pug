@@ -1,0 +1,11 @@
+- let items = {pet_food: 'Pet food', transportation: 'Transportation', toys: 'Toys', bowls_and_cups: 'Bowls and cups', shampoos: 'Shampoos', vitamins: 'Vitamins', medicines: 'Medicines', collars_leashes: 'Collars / leashes', sleeping_areas: 'Sleeping areas'};
+
+mixin icon(bg, name)
+  .help-item
+    .icon-image
+      img(src = bg alt="icon")
+    .help-name #{name}
+
+each item in Object.entries(items)
+  - let img = item[0].replaceAll('_', '-');
+  +icon(`./assets/icons/icon-${img}.svg`, item[1])

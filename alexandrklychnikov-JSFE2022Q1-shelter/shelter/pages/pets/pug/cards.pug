@@ -1,0 +1,13 @@
+- const pets = ['Katrine', 'Jennifer', 'Woody', 'Sophia', 'Timmy', 'Charly', 'Scarlett', 'Freddie']
+
+mixin card(bg, name)
+  .card-wrapper
+    .card
+      //- .image-content(style = bg)
+      //- .pet-name #{name}
+      //- .button.card-btn Learn more
+
+each pet in pets
+  - let img = pet.toLowerCase();
+  - let imgSize = (img === 'sophia') ? 'center/150% ' : ''
+  +card(`background: ${imgSize}url(../../assets/images/pets/${img}.png)`, pet)

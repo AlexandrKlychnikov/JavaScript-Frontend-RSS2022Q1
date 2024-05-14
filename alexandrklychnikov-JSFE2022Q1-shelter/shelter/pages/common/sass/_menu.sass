@@ -1,0 +1,26 @@
+.menu
+  display: flex
+  column-gap: 35px
+  width: 443px
+  height: 27px
+  list-style: none
+  li:nth-of-type(3) .nav-link,
+  li:nth-of-type(4) .nav-link
+    left: 2px
+
+.nav-link
+  position: relative
+  bottom: 2px
+  text-decoration: none
+  font-family: "Inter", sans-serif
+  font-style: normal
+  font-weight: normal
+  font-size: 15px
+  line-height: 27px
+  color: #CDCDCD
+  &.active
+    padding-bottom: 4px
+    border-bottom: #F1CDB3 solid 3px
+    color: #FAFAFA
+  &:hover
+    color: #FAFAFA

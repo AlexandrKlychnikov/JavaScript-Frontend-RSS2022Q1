@@ -1,0 +1,49 @@
+.about
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 80px 120px 100px
+
+.about__content
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap-reverse
+  column-gap: 120px
+  .image-content
+    width: 300px
+    height: 408px
+    background-image: url('./assets/images/about-pets.png')
+  .text-content
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 430px
+    height: 380px
+
+.about__heading
+  font-family: 'Georgia'
+  font-style: normal
+  font-weight: 400
+  line-height: 130%
+  display: flex
+  align-items: center
+  letter-spacing: 0.06em
+  color: #545454
+  font-size: 35px
+  @media screen and (max-width: 767px)
+    font-size: 30px
+  @media screen and (max-width: 580px)
+    font-size: 28px
+  @media screen and (max-width: 480px)
+    font-size: 26px
+  @media screen and (max-width: 380px)
+    font-size: 25px
+
+.about__subheading
+  font-family: 'Arial'
+  font-style: normal
+  font-weight: 400
+  font-size: 15px
+  line-height: 160%
+  color: #4C4C4C

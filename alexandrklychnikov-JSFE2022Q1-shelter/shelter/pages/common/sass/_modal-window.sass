@@ -1,0 +1,99 @@
+.modal-overlay
+  display: none
+  &.active
+    display: block
+    position: fixed
+    overflow: auto
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: rgba(41, 41, 41, 0.6)
+    z-index: 3
+    &:hover
+      .close-btn
+        background: #FDDCC4
+        border-color: #FDDCC4
+        cursor: pointer
+
+.modal
+  display: none
+  &.active
+    display: block
+    position: absolute
+    left: 50%
+    top: 50%
+    margin-left: -450px
+    margin-top: -250px
+    &:hover
+      .close-btn
+        background: none
+        border-color: #FDDCC4
+        cursor: auto
+      .close-btn:hover
+        background: #FDDCC4
+        border-color: #FDDCC4
+        cursor: pointer
+
+.modal-window
+  display: flex
+  width: 900px
+  height: 500px
+  background: #FAFAFA
+  border-radius: 9px
+  .image-content
+    width: 500px
+    aspect-ratio: 1 / 1
+    background-size: cover
+    border-radius: 9px 0 0 9px
+  .text-content
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: start
+    gap: 40px
+    padding: 50px 20px 88px 29px
+    font-family: 'Georgia'
+    font-style: normal
+    font-weight: 400
+    letter-spacing: 0.06em
+    color: #000000
+    .pet-name
+      font-size: 35px
+      line-height: 130%
+    .pet-type
+      font-size: 20px
+      line-height: 115%
+    .decription
+      font-size: 15px
+
+.wrapper__name
+  display: flex
+  flex-direction: column
+  gap: 30px
+
+.spec-type
+  font-weight: bold
+  font-size: 15px
+  line-height: 110%
+  color: #000000
+
+.spec-content
+  font-size: 15px
+  line-height: 110%
+  color: #000000
+
+.specificity
+  margin-left: 14px
+  display: flex
+  flex-direction: column
+  gap: 10px
+  li
+    color: #F1CDB3
+
+.close-btn
+  @extend .arrow
+  justify-content: center
+  position: absolute
+  top: -52px
+  right: -43px
