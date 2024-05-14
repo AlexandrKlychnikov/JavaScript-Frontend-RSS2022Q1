@@ -1,0 +1,30 @@
+.track
+  width: 100%
+  margin-bottom: 10px
+  padding-bottom: 2px
+  list-style: none
+  position: relative
+  display: flex
+  justify-content: flex-start
+  border-bottom: 2px blue dashed
+
+.car
+  margin-left: 77px
+  width: 100px
+  height: 60px
+  position: absolute
+  left: 0px
+  z-index: -1
+  transform: rotateY(180deg)
+  fill: black
+
+.car.back
+  left: 0 !important
+  transition: none !important
+
+.flag
+  position: absolute
+  right: 65px
+  width: 81.92px
+  height: 63.32px
+  background: center/cover url('./flag.svg') no-repeat

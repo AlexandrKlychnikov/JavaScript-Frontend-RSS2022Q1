@@ -1,0 +1,43 @@
+.panel
+  display: flex
+  flex-direction: column
+  row-gap: 5px
+  &Race, &Reset
+    flex-grow: 2
+  &Generate
+    flex-grow: 3
+  &Create, &Update
+    color: red
+    font-weight: 700
+    background-color: rgb(241, 202, 202)
+
+.fieldset
+  width: 300px
+  display: flex
+  justify-content: space-between
+  border: none
+
+.btn
+  padding: 2px 7px
+  color: green
+  font-weight: 700
+  background-color: rgb(222, 251, 252)
+  cursor: pointer
+
+.btn:hover
+  background-color: rgb(148, 232, 235)
+
+.btn:active
+  transform: scale(0.95)
+
+.message
+  display: none
+  position: absolute
+  left: 33%
+  top: 50%
+  text-align: center
+  font-size: 36px
+  color: #fff
+  text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e
+  &.visible
+    display: block
